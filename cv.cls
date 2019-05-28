@@ -8,7 +8,7 @@
 \ProcessOptions\relax
 \LoadClass{article}
 
-\usepackage[hmargin=1.25cm, vmargin=0.75cm]{geometry} % Specifies horizontal and vertical page margins
+\usepackage[hmargin=0.1cm, vmargin=0.75cm]{geometry} % Specifies horizontal and vertical page margins
 \usepackage[hidelinks]{hyperref} % Required for links
 
 %----------------------------------------------------------------------------------------
@@ -41,12 +41,14 @@
 \fontspec[Path = fonts/Montserrat/]{Montserrat-Light}\selectfont #1 % First name font
 \fontspec[Path = fonts/Montserrat/]{Montserrat-Bold}\selectfont #2 % Last name font
 }\\[5pt] % Whitespace between the name and contact information
-\centering{ % Center the contact information
+ % Center the contact information
+{
 \color{headings} % Use the headings color
 \fontspec[Path = fonts/OpenSans/]{OpenSans-Light}\fontsize{11pt}{14pt}\selectfont #3} % Contact information font
 \noindent\makebox[\linewidth]{\color{headings}\rule{\paperwidth}{0.4pt}} % Horizontal rule
 \vspace{-5pt} % Reduce whitespace after the rule slightly
 }
+
 
 %----------------------------------------------------------------------------------------
 %	SECTION TITLE STYLING AND SPACING

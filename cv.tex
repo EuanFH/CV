@@ -1,29 +1,18 @@
 \documentclass[a4paper]{cv}
 \usepackage{fontawesome}
 \usepackage{fontawesome5}
+\usepackage{multicol}
 \begin{document}
 \namesection{Euan}{Haahr}{
     {\faGlobe} \href{https://euanhaahr.dev}{euanhaahr.dev} |
     {\faEnvelopeO} \href{mailto:euan@haahr.co.uk}{euan@haahr.co.uk} |
     {\faPhone} *********** |
-    {\faGithub} /EuanFH\\
-%    \facon{id-card} Full UK Drivers License
+    {\faLinkedin} /in/euanhaahr |
+    {\faGithub} /EuanFH |
+    \facon{id-card} UK Drivers License
 }
-\section{Objective}
-\begin{flushleft}
-I am a passionate technology enthusiast. With a great interest in using cutting edge technologies.
-I hope to create software to make peoples lives easier and have fun while doing it.
-\end{flushleft}
 %Left Section
-\begin{minipage}[t]{0.33\textwidth}
-\section{Soft-Skills}
-\begin{itemize}
-\item Great communication skills
-\item Quick learner
-\item Can rapidly adapt to change
-\item Takes criticism seriously
-\item Highly motivated
-\end{itemize}
+\begin{minipage}[t]{0.30\textwidth}
 
 \section{Software Skills}
 \subsection{Golang}
@@ -43,16 +32,23 @@ I have been using Java since I started programming. The majority of my universit
 I have made multiple small web apps through the years. One of which was for a university project which required a single page web application to be made without a framework, this project gave me a much better understanding of javascript and the event loops.
 \end{flushleft}
 
+\section{Honors Project}
 \end{minipage}
-\hfill
+\hspace{0.2cm}
 %Right Section
 \begin{minipage}[t]{0.66\textwidth}
 \section{Experience}
 \runsubsection{1st Line ICT Support}
 \descript{| Glasgow Clyde College}
 \duration{December 2016 – August 2017}
-In this position I learn the importance of working in a team on large projects. Dealing with users directly and quickly getting to the root of their problem via email, phone, and in person which was the most preferable. Working swiftly to resolve there issues in a friendly and professional manner. I also supported the network team when they weren't on campus, confirming issues for them, and restarting servers.
-I was also chosen on multiple occasion to work at other campuses, when staff members where absent. Having to quickly integrate into the campuses teams. Supporting them on ongoing tickets.
+\begin{itemize}
+    \item Repaired computers, fixed issues with active directory and other college systems. fixed issues reported by users. FIX THIS.
+    \item I learned the importance of working in a team on large projects.
+    \item I learned how to deal with users directly and quickly get to the root of their problem via email, phone, and in person.
+    \item Swiftly resolved users issues in a professional and friendly manner.
+    \item Supported the networking team by confirming issues and restarting servers.
+    \item Choosen on multiple occasions to work at other campuses, when team members where absent. Quickly integrating into their team and suppoting the team on ongoing tickets.
+\end{itemize}
 %this duration and then text feel clostrapobic add space
 \section{Education}
 \runsubsection{Bsc(Hons) Computing}
@@ -68,9 +64,25 @@ I was also chosen on multiple occasion to work at other campuses, when staff mem
 \runsubsection{NQ Information Technology}
 \descript{| Glasgow Clyde College}
 \duration{2014 – 2015}
-
+ 
 \section{Personal Interests}
-In my spare time I like to work on my home server lab. Having setup my own router using DHCPD for the DHCP server, BIND 9 for the DNS, and Shorewall for the firewall. As well as a storage/application server using containerization with LXD/LXC and ZFS for my storage pools. Container deployment is automated via Ansible.
+\subsection{Home Server}
+\begin{multicols}{4}
+{\bfseries Technologies}\vfill\null
+\columnbreak
+\begin{itemize} 
+    \item DHCPD
+    \item BIND 9
+    \item Shorewall
+    \item LXD/LXC
+    \item ZFS
+    \item Ansible
+    \item Linux
+    \item Systemd
+    \item Nginx
+\end{itemize}
+\end{multicols}
+In my spare time I like to work on my home server lab. Having setup my own router using DHCPD for the DHCP server, BIND 9 for the DNS, and Shorewall for the firewall. As well as a storage/application server using containerization with LXD/LXC. I use ZFS for my storage pools, a 20TB pool for general storage and a 2TB pool for containers. Container deployment is automated via Ansible.
 
 Using these technologies has given me a good understanding of networking, Linux, and containerization technologies.
 \end{minipage}
