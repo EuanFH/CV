@@ -8,52 +8,26 @@
     {\faEnvelopeO} \href{mailto:euan@haahr.co.uk}{euan@haahr.co.uk} |
     {\faPhone} 07946 230043 |
     {\faLinkedin} /in/euanhaahr |
-    {\faGithub} /EuanFH |
-    \facon{id-card} UK Drivers License
+    {\faGithub} /EuanFH
 }
-%Left Section
-\begin{minipage}[t]{0.33\textwidth}
-
-\section{Software Skills} 
-\subsection{Java \textbullet{} SQL \textbullet{} REST}
-\begin{flushleft}
-The majority of my university projects were written in Java, as a result it has made me proficient with object oriented development and design. The most recent project i've worked on was a native android application implemented following the MVVM (Model-View-ViewModel) architecture pattern.
-I have had exposure to enterprise level Java frameworks as i have developed REST Api's using the popular framework Spring Boot.
-Almost all projects I have worked on have used some form of an SQL database. I have mainly used SQLite, MySQL and MariaDB. I also have knowledge on Oracle Database due to a course I attended in College for database design.
-\end{flushleft}
-
-\sectionspace
-\subsection{Javascript \textbullet{} HTML \textbullet{} CSS}
-\begin{flushleft}
-I have made multiple small web applications throughout the years. One of which was for a university project which required a single page web application to be made without a framework, this project gave me a much better understanding of Javascript and its environment (event-loop).
-\end{flushleft}
-\sectionspace
-\subsection{Golang}
-\begin{flushleft}
-All personal projects I have developed within the past year have been written in Golang. Golang has became my goto choice of language as it allows me to develop powerful programs whilst still being fairly simple to use. Golang's concurrency model has made me aware of the importance of asynchronous programming combining concurrency and parallelism where appropriate.
-\end{flushleft}
-\section{Skills}
-\begin{flushleft}
-\begin{itemize}
-    \item Great communication skills
-    \item Quick learner
-    \item Able to rapidly adapt to change
-    \item Able to use criticism constructively
-    \item Highly motivated
-\end{itemize}
-\end{flushleft}
-\end{minipage}
-\hspace{0.1cm}
-{\color{headings}\vrule}
-\hspace{0.1cm}
-%Right Section
-\begin{minipage}[t]{0.60\textwidth}
+\begin{minipage}[t]{0.55\textwidth}
 \section{Experience}
 \runsubsection{Software Developer}
-\descript{| Global Voices}
+\\
+\descript{Global Voices}
 \duration{October 2019 – Present}
+In my current position my team and I maintain a legacy PHP application as we write and migrate to a new serverless based system using Lamdas written in C\# and React.
+\begin{itemize}
+    \item Learned the importance of refactoring code while fixing bugs
+    \item Learned how to maintain code that wasnt written by me
+    \item Took initative and learned Ansible, Terraform, and Packer so we could migrate our legacy applications to AWS
+    \item Created remote development enviroments for my team members
+    \item Fixed security vulnerabilities found in a penetration test and then tracking down and reporting more. Helping the company secure a large contract. 
+    \item Quickly learning React from previous Javascript experience, so my team could deliver the minimum viable product as fast as possible.
+\end{itemize}
 \runsubsection{1st Line ICT Support}
-\descript{| Glasgow Clyde College}
+\\
+\descript{Glasgow Clyde College}
 \duration{December 2016 – August 2017}
 My role in this position was to work on tickets submitted by users and solve their computing related issues.
 \begin{itemize}
@@ -64,29 +38,57 @@ My role in this position was to work on tickets submitted by users and solve the
     \item I was chosen on multiple occasions to work at other campuses, when team members were absent: quickly integrating into their team and supporting the team on ongoing tickets.
     \item I spent downtime writing scripts in python to automate tedious tasks.
 \end{itemize}
+\end{minipage}
+\hspace{0.2cm}
+{\color{headings}\vrule}
+\hspace{0.2cm}
+\begin{minipage}[t]{0.41\textwidth}
 \section{Education}
 \runsubsection{Bsc(Hons) Computing (First Class)}
-\descript{| Glasgow Caledonian University}
+\\
+\descript{Glasgow Caledonian University}
 \duration{2017 – 2019}
 \sectionspace
 
 \runsubsection{HND Computing Science}
-\descript{| Glasgow Clyde College}
+\\
+\descript{Glasgow Clyde College}
 \duration{2015 – 2017}
 \sectionspace
 
 \runsubsection{NQ Information Technology}
-\descript{| Glasgow Clyde College}
+\\
+\descript{Glasgow Clyde College}
 \duration{2014 – 2015}
- 
-\section{Projects}
-\subsection{Home Server}
-In my spare time I like to work on my home server lab. Having setup my own router using DHCPD for the DHCP server, BIND 9 for the DNS, and Shorewall for the firewall. As well as a storage/application server using containerization with LXD/LXC. I use ZFS for my storage pools, a 20TB pool for general storage and a 2TB pool for containers. Container deployment is automated via Ansible.
+\section{Technology Skills}
+\textbf{Programming Languages/Frameworks}
+\begin{itemize}
+    \item Java, Spring Boot, PHP, Golang, SQL
+\end{itemize}
+\begin{itemize}
+    \item React, Javascript, HTML, CSS
+\end{itemize}
+\textbf{DevOps Tools}
+\begin{itemize}
+    \item Terraform, Packer, Ansible, LXC/LXD
+\end{itemize}
+\textbf{Agile Tools}
+\begin{itemize}
+    \item Jira, Confluence
+\end{itemize}
+\textbf{Version Control}
+\begin{itemize}
+    \item Git, GitLab, BitBucket, GitHub
+\end{itemize}
 
-Using these technologies has given me a good understanding of networking, Linux, and containerization technologies.
-
-\sectionspace
-\subsection{Honors Project}
-I created a voice recognition system for Discord a VOIP service. The project was akin to google home or amazon alexa. The application would listen to everyone in the VOIP call and listen for a key phrase. Once the key phrase had been spoken the user command would be stream to Google Cloud Speech To Text. The resulting command text was then processed by Rasa NLU and if a known command was heard it would run that command e.g. playing music. This application was highly concurrent, this made me very aware of thread safety and taught me a lot about different ways of passing/sharing data between threads. 
+\section{Personal Skills}
+\begin{itemize}
+    \item Great communication skills
+    \item Quick learner
+    \item Able to rapidly adapt to change
+    \item Able to use criticism constructively
+    \item Knows when to ask more experienced team members for help
+    \item Highly motivated
+\end{itemize}
 \end{minipage}
 \end{document}
